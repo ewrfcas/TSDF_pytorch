@@ -123,8 +123,8 @@ class NormalizedMVSDTU(Dataset):
 
         # NOTE that the id in image file names is from 1 to 49 (not 0~48)
         img_filename = os.path.join(self.root_dir, f'DTU_IDR/dtu_{scan}/image/{vid:06d}.png')
-        depth_filename = os.path.join(self.root_dir, f'Depths_raw/{scan}/depth_map_{vid:04d}.pfm')
         mask_filename = os.path.join(self.root_dir, f'DTU_IDR/dtu_{scan}/mask/{vid:03d}.png')
+        depth_filename = os.path.join(self.root_dir, f'Depths_raw/{scan}/depth_map_{vid:04d}.pfm')
         manual_mask = cv2.imread(mask_filename, cv2.IMREAD_GRAYSCALE)  # [1200,1600]
         manual_mask[manual_mask <= 127.5] = 0
         manual_mask[manual_mask > 127.5] = 1
@@ -138,7 +138,8 @@ class NormalizedMVSDTU(Dataset):
         depth_h *= self.scale_factor
         depth_h /= self.norm_scale
         if self.pred_depth_dir is not None:
-            depth_pred = self.read_depth(os.path.join(self.pred_depth_dir, f'{vid:08d}.pfm'))
+            depth_pred = self.read_depth(os.path.join(self.pred_depth_dir,
+                                                      f'{scan}/depth_est/{vid:08d}.pfm'))
             depth_pred *= self.scale_factor
             depth_pred /= self.norm_scale
         else:

@@ -9,9 +9,9 @@ import os
 import torch
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--data_dir", type=str, default='../DTU_MVSNet', help='input data directory')
+parser.add_argument("--data_dir", type=str, default='./data', help='input data directory')
 parser.add_argument("--output_dir", type=str, default='results', help='output directory')
-parser.add_argument("--pred_depth_dir", type=str, default=None, help='predicted depth map dir')
+parser.add_argument("--pred_depth_dir", type=str, default='./data/PatchMatchNet_prediction', help='predicted depth map dir')
 parser.add_argument("--near", type=float, default=1.1066, help='nearest plane distance')
 parser.add_argument("--far", type=float, default=2.3565, help='farest plane distance')
 parser.add_argument("--max_view_num", type=int, default=10, help='view number used in fusion')

@@ -30,10 +30,16 @@ CUDA_VISIBLE_DEVICES=0 python run.py --use_gt_depth --data_dir <your DTU path>
 ```
 
 ### Fusion results of PatchMatch predicted depth
-1 view![1view](./assets/snapshot01.png)
-2 views![2view](./assets/snapshot02.png)
-4 views![4view](./assets/snapshot03.png)
-8 views![8view](./assets/snapshot04.png)
+
+[comment]: <> (1 view![1view]&#40;./assets/snapshot01.png&#41;)
+
+[comment]: <> (2 views![2view]&#40;./assets/snapshot02.png&#41;)
+
+[comment]: <> (4 views![4view]&#40;./assets/snapshot03.png&#41;)
+
+[comment]: <> (8 views![8view]&#40;./assets/snapshot04.png&#41;)
+
+<img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot01.png" width="200"/><img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot02.png" width="200"/><img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot03.png" width="200"/><img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot04.png" width="200"/>
 
 
 
