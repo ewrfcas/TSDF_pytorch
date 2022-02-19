@@ -13,7 +13,7 @@ You can also get results of real-world data with cameras and depths.
 
 ### DTU depths (ground truth / PatchMatch prediction)
 
-![depth1](./assets/depth.png) ![depth2](./assets/depth2.png)
+<img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/depth.png" width="400"/>*gt depth*<img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/depth2.png" width="400"/>*patchmatchnet depth*
 
 ### Fusion with pytorch
 
@@ -30,14 +30,6 @@ CUDA_VISIBLE_DEVICES=0 python run.py --use_gt_depth --data_dir <your DTU path>
 ```
 
 ### Fusion results of PatchMatch predicted depth
-
-[comment]: <> (1 view![1view]&#40;./assets/snapshot01.png&#41;)
-
-[comment]: <> (2 views![2view]&#40;./assets/snapshot02.png&#41;)
-
-[comment]: <> (4 views![4view]&#40;./assets/snapshot03.png&#41;)
-
-[comment]: <> (8 views![8view]&#40;./assets/snapshot04.png&#41;)
 
 <img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot01.png" width="200"/><img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot02.png" width="200"/><img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot03.png" width="200"/><img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot04.png" width="200"/>
 
