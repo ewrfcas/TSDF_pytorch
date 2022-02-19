@@ -14,10 +14,9 @@ You can also get results of real-world data with cameras and depths.
 
 ### DTU images (not used in fusion)
 
-![img](./assets/img.png)
+<img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/img.png" width="600"/>
 
 ### DTU depths
-
 
 | gt depth   | patchmatchnet depth   |
 | -------- | -------- |
@@ -41,7 +40,7 @@ CUDA_VISIBLE_DEVICES=0 python run.py --use_gt_depth --data_dir <your DTU path>
 
 | 1-view | 2-view | 4-view | 8-view |
 | -------- | -------- | -------- | -------- |
-| <img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot01.png" width="200"/> | <img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot02.png" width="200"/> | <img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot03.png" width="200"/> | <img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot04.png" width="200"/> |
+| <img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot01.png" width="300"/> | <img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot02.png" width="300"/> | <img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot03.png" width="300"/> | <img src="https://github.com/ewrfcas/TSDF_pytorch/blob/main/assets/snapshot04.png" width="300"/> |
 
 
 
